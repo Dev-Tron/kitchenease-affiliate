@@ -2,6 +2,7 @@ import "@/app/globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import { Outfit } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next"
 
 const outfit = Outfit({ subsets: ["latin"] });
 
