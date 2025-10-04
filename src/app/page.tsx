@@ -1,7 +1,8 @@
-import { getPosts } from "@/lib/posts"
-import HomeClient from "./HomeClient"
+import { getAllPosts } from "@/lib/posts";
+import HomeClient from "./HomeClient";
 
 export default function Page() {
-  const posts = getPosts() // ✅ runs server-side only
-  return <HomeClient posts={posts} />
+  // ✅ use the correct function name
+  const posts = getAllPosts(); // runs server-side only
+  return <HomeClient posts={posts} />;
 }

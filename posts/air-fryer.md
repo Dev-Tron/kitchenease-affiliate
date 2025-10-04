@@ -2,6 +2,7 @@
 title: "Best Air Fryers for Families on a Budget"
 excerpt: "Looking for a family-sized air fryer that won’t break the bank? We’ve tested and compared the best budget-friendly options for 2025."
 affiliateLink: "https://www.amazon.com/dp/EXAMPLE?tag=yourID-20"
+date: "2025-10-04"
 ---
 
 Air fryers have quickly become a staple in modern kitchens. For busy families, they offer a healthier and faster alternative to traditional frying while keeping cleanup simple. But with so many models on the market, how do you choose the right one without overspending?

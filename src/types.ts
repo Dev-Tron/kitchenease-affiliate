@@ -3,5 +3,6 @@ export interface Post {
     title: string
     excerpt: string
     affiliateLink?: string
+    date: Date
   }
   

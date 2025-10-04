@@ -2,6 +2,7 @@
 title: "Best Blenders for Smoothies in 2025"
 excerpt: "Need a powerful blender for daily smoothies without overspending? These are our top affordable choices."
 affiliateLink: "https://www.amazon.com/dp/EXAMPLE?tag=yourID-20"
+date: "2025-10-04"
 ---
 
 Smoothies are one of the easiest ways to add nutrition to your day. But without the right blender, you’ll be stuck with lumpy drinks and wasted ingredients.

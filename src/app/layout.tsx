@@ -19,6 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main className="container mx-auto px-4 pt-24 md:pt-32 pb-12 space-y-16">
           {children}
+          <Analytics />
         </main>
         <Footer />
       </body>

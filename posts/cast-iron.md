@@ -2,6 +2,7 @@
 title: "Best Cast Iron Skillets for Everyday Cooking"
 excerpt: "Looking for a durable cast iron skillet that won’t break the bank? Here are the top budget-friendly skillets for 2025."
 affiliateLink: "https://www.amazon.com/dp/EXAMPLE?tag=yourID-20"
+date: "2025-10-04"
 ---
 
 Cast iron skillets are a kitchen essential, known for their durability, versatility, and ability to retain heat. Whether you’re searing steak, baking cornbread, or frying eggs, a good skillet can last you a lifetime.

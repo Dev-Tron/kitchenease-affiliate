@@ -2,6 +2,7 @@
 title: "Best Coffee Makers for Home Brewing in 2025"
 excerpt: "Brew café-quality coffee without leaving your kitchen. These are our top budget-friendly coffee makers for home use."
 affiliateLink: "https://www.amazon.com/dp/EXAMPLE?tag=yourID-20"
+date: "2025-10-04"
 ---
 
 There’s nothing like a fresh cup of coffee in the morning. But with so many coffee makers on the market, finding one that balances quality, convenience, and price can feel overwhelming.
