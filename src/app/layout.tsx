@@ -9,7 +9,10 @@ const outfit = Outfit({ subsets: ["latin"] });
 export const metadata = {
   title: "KitchenEase",
   description: "Fresh, practical home & kitchen picks",
-  openGraph: { type: "website", title: "KitchenEase", description: "..." }
+  openGraph: { type: "website", title: "KitchenEase", description: "..." },
+  icons: {
+    icon: "/favicon.png",
+  }
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
