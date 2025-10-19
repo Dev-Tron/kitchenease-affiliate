@@ -1,31 +1,27 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { useEffect, useState } from "react"
-import { Menu, X } from "lucide-react"
-import ThemeToggle from "@/components/ThemeToggle"
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import { Menu, X } from "lucide-react";
+import ThemeToggle from "@/components/ThemeToggle";
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(false)
-  const [scrolled, setScrolled] = useState(false)
-  const [loaded, setLoaded] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [loaded, setLoaded] = useState(false);
 
   // Detect scroll
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 20) {
-        setScrolled(true)
-      } else {
-        setScrolled(false)
-      }
-    }
-    window.addEventListener("scroll", handleScroll)
+      setScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
 
     // Trigger load animation
-    setTimeout(() => setLoaded(true), 100)
+    setTimeout(() => setLoaded(true), 100);
 
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <header
@@ -33,9 +29,9 @@ export default function Header() {
         loaded ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"
       } ${
         isOpen
-          ? "bg-white shadow-md h-16" // 👈 when menu is open
+          ? "bg-white shadow-md h-16"
           : scrolled
-          ? "bg-[#5A8F60] shadow-md h-12" // 👈 darker sage green on scroll
+          ? "bg-[#5A8F60] shadow-md h-12"
           : "bg-transparent h-16"
       }`}
     >
@@ -63,11 +59,21 @@ export default function Header() {
             scrolled ? "text-sm" : "text-base"
           }`}
         >
-          <Link className="hover:text-yellow-200 transition-colors" href="/">Home</Link>
-          <Link className="hover:text-yellow-200 transition-colors" href="/about">About</Link>
-          <Link className="hover:text-yellow-200 transition-colors" href="/disclosure">Disclosure</Link>
-          <Link className="hover:text-yellow-200 transition-colors" href="/archive">Archive</Link>
-          <Link className="hover:text-yellow-200 transition-colors" href="/featured">Products</Link>
+          <Link className="hover:text-yellow-200 transition-colors" href="/">
+            Home
+          </Link>
+          <Link className="hover:text-yellow-200 transition-colors" href="/about">
+            About
+          </Link>
+          <Link className="hover:text-yellow-200 transition-colors" href="/disclosure">
+            Disclosure
+          </Link>
+          <Link className="hover:text-yellow-200 transition-colors" href="/archive">
+            Archive
+          </Link>
+          <Link className="hover:text-yellow-200 transition-colors" href="/featured">
+            Products
+          </Link>
 
           {/* Theme Toggle */}
           <ThemeToggle />
@@ -90,7 +96,7 @@ export default function Header() {
         onClick={() => setIsOpen(false)}
       ></div>
 
-      {/* Sidebar Drawer (slides from right, fades in) */}
+      {/* Sidebar Drawer */}
       <div
         className={`fixed top-0 right-0 h-full w-64 bg-white text-black p-6 shadow-lg z-50 transform transition-all duration-300 ease-in-out rounded-bl-2xl ${
           isOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
@@ -104,27 +110,34 @@ export default function Header() {
           <X size={26} />
         </button>
 
-        {/* Nav Links */}
+        {/* ✅ Nav Links (hydration-safe) */}
         <nav className="mt-10 flex flex-col gap-4 text-lg">
-          {["Home", "About", "Disclosure"].map((item, i) => (
+          {[
+            { name: "Home", href: "/" },
+            { name: "About", href: "/about" },
+            { name: "Disclosure", href: "/disclosure" },
+            { name: "Archive", href: "/archive" },
+            { name: "Products", href: "/featured" },
+          ].map((item, index) => (
             <Link
-              key={item}
-              href={item === "Home" ? "/" : `/${item.toLowerCase()}`}
+              key={item.name}
+              href={item.href}
               onClick={() => setIsOpen(false)}
-              className={`transform transition-all duration-300 delay-${i * 100} ${
+              className={`transform transition-all duration-300 ${
                 isOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-4"
               } hover:text-[#5A8F60]`}
+              style={{ transitionDelay: `${index * 100}ms` }} // ✅ safe fix for hydration mismatch
             >
-              {item}
+              {item.name}
             </Link>
           ))}
         </nav>
 
-        {/* Theme Toggle in Drawer */}
+        {/* Theme Toggle */}
         <div className="mt-8 border-t border-stone-200 pt-4">
           <ThemeToggle />
         </div>
       </div>
     </header>
-  )
+  );
 }
