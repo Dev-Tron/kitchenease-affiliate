@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { useEffect, useState } from "react"
 import { Menu, X } from "lucide-react"
+import ThemeToggle from "@/components/ThemeToggle"
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -32,9 +33,9 @@ export default function Header() {
         loaded ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"
       } ${
         isOpen
-          ? "bg-white shadow-md h-16" // 👈 menu open = solid white header
+          ? "bg-white shadow-md h-16" // 👈 when menu is open
           : scrolled
-          ? "bg-orange-500 shadow-md h-12"
+          ? "bg-[#5A8F60] shadow-md h-12" // 👈 darker sage green on scroll
           : "bg-transparent h-16"
       }`}
     >
@@ -58,13 +59,18 @@ export default function Header() {
 
         {/* Desktop Nav */}
         <nav
-          className={`hidden md:flex gap-5 transition-all duration-500 ${
+          className={`hidden md:flex gap-5 items-center transition-all duration-500 ${
             scrolled ? "text-sm" : "text-base"
           }`}
         >
           <Link className="hover:text-yellow-200 transition-colors" href="/">Home</Link>
           <Link className="hover:text-yellow-200 transition-colors" href="/about">About</Link>
           <Link className="hover:text-yellow-200 transition-colors" href="/disclosure">Disclosure</Link>
+          <Link className="hover:text-yellow-200 transition-colors" href="/archive">Archive</Link>
+          <Link className="hover:text-yellow-200 transition-colors" href="/featured">Products</Link>
+
+          {/* Theme Toggle */}
+          <ThemeToggle />
         </nav>
 
         {/* Mobile Menu Button */}
@@ -86,7 +92,7 @@ export default function Header() {
 
       {/* Sidebar Drawer (slides from right, fades in) */}
       <div
-        className={`fixed top-0 right-0 h-fill w-64 bg-white text-black p-6 shadow-lg z-50 transform transition-all duration-300 ease-in-out rounded-bl-2xl ${
+        className={`fixed top-0 right-0 h-full w-64 bg-white text-black p-6 shadow-lg z-50 transform transition-all duration-300 ease-in-out rounded-bl-2xl ${
           isOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
         }`}
       >
@@ -98,7 +104,7 @@ export default function Header() {
           <X size={26} />
         </button>
 
-        {/* Nav Links with staggered animation */}
+        {/* Nav Links */}
         <nav className="mt-10 flex flex-col gap-4 text-lg">
           {["Home", "About", "Disclosure"].map((item, i) => (
             <Link
@@ -107,12 +113,17 @@ export default function Header() {
               onClick={() => setIsOpen(false)}
               className={`transform transition-all duration-300 delay-${i * 100} ${
                 isOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-4"
-              } hover:text-orange-500`}
+              } hover:text-[#5A8F60]`}
             >
               {item}
             </Link>
           ))}
         </nav>
+
+        {/* Theme Toggle in Drawer */}
+        <div className="mt-8 border-t border-stone-200 pt-4">
+          <ThemeToggle />
+        </div>
       </div>
     </header>
   )

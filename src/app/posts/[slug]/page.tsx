@@ -25,7 +25,7 @@ export default async function PostPage({ params }: { params: { slug: string } })
     <article className="max-w-3xl mx-auto bg-white rounded-2xl shadow-sm p-6">
       {/* Title */}
       <h1 className="text-3xl font-bold mb-4 text-black">{fm.title}</h1>
-
+  
       {/* Excerpt */}
       {fm.excerpt && <p className="text-lg mb-6 text-black">{fm.excerpt}</p>}
 

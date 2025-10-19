@@ -70,7 +70,7 @@ export default function HomeClient({ posts }: { posts: Post[] }) {
         <div className="text-center">
           <a
             href="/featured"
-            className="inline-block bg-brand hover:bg-brand-dark text-white px-6 py-3 rounded-lg font-semibold transition"
+            className="inline-block bg-[#5A8F60] text-white px-6 py-3 rounded-lg font-semibold transition"
           >
             View All Featured Products
           </a>
@@ -81,10 +81,16 @@ export default function HomeClient({ posts }: { posts: Post[] }) {
       <section className="container mx-auto px-6 py-16">
         <h2 className="text-3xl font-bold mb-6 text-center">Latest Posts</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {posts.map((post) => (
+          {posts.slice(0, 6).map((post) => (
             <PostCard key={post.slug} post={post} />
           ))}
         </div>
+        <div className="text-center mt-10">
+          <a href="/archive" className="inline-block bg-[#5A8F60] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#4a7852] transition">
+            View Older Posts
+          </a>
+        </div>
+
       </section>
     </div>
   );

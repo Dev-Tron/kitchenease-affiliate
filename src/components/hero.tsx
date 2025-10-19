@@ -39,7 +39,7 @@ export default function Hero() {
           </p>
           <a
             href="#featured"
-            className="inline-block mt-6 rounded-xl bg-brand px-6 py-3 font-semibold text-white hover:bg-brand-dark transition"
+            className="inline-block mt-6 rounded-xl bg-[#5A8F60] px-6 py-3 font-semibold text-white hover:bg-brand-dark transition"
           >
             See Featured Products
           </a>
