@@ -5,7 +5,6 @@ date: "2025-10-16"
 affiliateLink: ""
 ---
 
-
 Small kitchens don’t have to mean chaos. With a few smart tricks, you can make your space feel bigger, cleaner, and way more functional. Whether you’re renting or renovating, here are 5 ways to organize your kitchen like a minimalist master chef.
 
 <div class="gap-section"></div>
@@ -15,21 +14,20 @@ Small kitchens don’t have to mean chaos. With a few smart tricks, you can make
 > ✅ Visual learner? Here’s a quick 1-minute video walking you through all 5 tips.
 
 <div class="video-container rounded-xl shadow-md overflow-hidden border border-stone-300">
-  <video 
-    src="/5-ways-to-organize.mp4"  
-    title="5 Smart Ways to Organize a Small Kitchen"  
-    controls  
-    preload="metadata"  
-    loading="lazy"  
+  <iframe
+    src="https://www.youtube.com/embed/qrAMC8Ac7OM"
+    title="5 Smart Ways to Organize a Small Kitchen"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    loading="lazy"
     class="w-full h-full object-cover"
-  ></video>
+  ></iframe>
 </div>
 
 <div class="gap-section"></div>
 
 ## 🧠 5 Smart Tips for a More Organized Kitchen
-
-<div class="gap-section"></div>
 
 ### 1. Declutter Your Counters  
 Only leave out the things you use every single day. Everything else? Tuck it into drawers, bins, or cabinets.

@@ -25,8 +25,8 @@ export default function ArchivePage() {
 
   return (
     <section className="max-w-4xl mx-auto px-6 py-20">
-      <h1 className="text-3xl font-bold mb-8 text-[#5A8F60]">Post Archive</h1>
-      <p className="text-stone-600 mb-10">
+      <h1 className="text-3xl font-bold mb-8 text-white">Post Archive</h1>
+      <p className="text-white mb-10">
         Posts older than the most recent six.
       </p>
 

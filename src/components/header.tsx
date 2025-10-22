@@ -68,11 +68,8 @@ export default function Header() {
           <Link className="hover:text-yellow-200 transition-colors" href="/disclosure">
             Disclosure
           </Link>
-          <Link className="hover:text-yellow-200 transition-colors" href="/archive">
-            Archive
-          </Link>
-          <Link className="hover:text-yellow-200 transition-colors" href="/featured">
-            Products
+          <Link className="hover:text-yellow-200 transition-colors" href="/contact">
+            Contact
           </Link>
 
           {/* Theme Toggle */}
@@ -116,8 +113,7 @@ export default function Header() {
             { name: "Home", href: "/" },
             { name: "About", href: "/about" },
             { name: "Disclosure", href: "/disclosure" },
-            { name: "Archive", href: "/archive" },
-            { name: "Products", href: "/featured" },
+            { name: "Contact", href: "/contact" },
           ].map((item, index) => (
             <Link
               key={item.name}

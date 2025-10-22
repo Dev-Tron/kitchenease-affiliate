@@ -3,29 +3,51 @@ import { useEffect, useState } from "react"
 
 export default function ThemeToggle() {
   const [darkMode, setDarkMode] = useState(false)
+  const [mounted, setMounted] = useState(false) // ✅ prevents hydration mismatch
 
+  // Run only on client after mount
   useEffect(() => {
-    // Check saved theme
-    if (localStorage.theme === "dark" ||
-        (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+    setMounted(true)
+
+    // Load saved theme or system preference
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches
+    const storedTheme = localStorage.getItem("theme")
+
+    const isDark = storedTheme === "dark" || (!storedTheme && prefersDark)
+
+    if (isDark) {
       document.documentElement.classList.add("dark")
       setDarkMode(true)
     } else {
       document.documentElement.classList.remove("dark")
+      setDarkMode(false)
     }
   }, [])
 
   const toggleTheme = () => {
     const html = document.documentElement
-    if (html.classList.contains("dark")) {
-      html.classList.remove("dark")
-      localStorage.theme = "light"
-      setDarkMode(false)
-    } else {
+    const newMode = !darkMode
+    setDarkMode(newMode)
+
+    if (newMode) {
       html.classList.add("dark")
-      localStorage.theme = "dark"
-      setDarkMode(true)
+      localStorage.setItem("theme", "dark")
+    } else {
+      html.classList.remove("dark")
+      localStorage.setItem("theme", "light")
     }
+  }
+
+  // ✅ Prevent rendering until mounted (fixes hydration error)
+  if (!mounted) {
+    return (
+      <button
+        className="rounded-lg border border-stone-300 px-4 py-2 text-sm font-semibold opacity-0"
+        aria-hidden="true"
+      >
+        …
+      </button>
+    )
   }
 
   return (
