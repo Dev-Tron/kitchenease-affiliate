@@ -1,7 +1,7 @@
 ---
 title: "Best Air Fryers for Families on a Budget"
 excerpt: "Looking for a family-sized air fryer that won’t break the bank? We’ve tested and compared the best budget-friendly options for 2025."
-affiliateLink: "https://www.amazon.com/dp/EXAMPLE?tag=yourID-20"
+affiliateLink: "https://www.amazon.com/dp/B0936FGLQS?tag=yourID-20"
 date: "2025-10-04"
 ---
 
@@ -28,30 +28,87 @@ When shopping for a family-sized air fryer, consider:
 
 <div class="gap-section"></div>
 
-<h1 classname="segment"> Top Budget Picks for 2025</h1>
+<div class="flex items-start gap-10 flex-row">
+  
 
-<h2 classname="second-segment">🥇COSORI Pro LE 5-Qt Air Fryer</h2>
-
-- Quiet motor  
-- Dishwasher-safe basket  
-- Digital controls  
-👉 [Check latest price on Amazon](https://www.amazon.com/dp/EXAMPLE?tag=yourID-20)
+  <div>
+    <h2 class="font-semibold text-lg mb-1">🥇 COSORI Pro LE 5-Qt Air Fryer</h2>
+    <ul class="list-disc list-inside text-stone-700 mb-2">
+      <li>Quiet motor</li>
+      <li>Dishwasher-safe basket</li>
+      <li>Digital controls</li>
+    </ul>
+    👉 <a
+      href="https://www.amazon.com/dp/B0936FGLQS?tag=kitchenease35-20"
+      class="text-brand hover:underline"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Check latest price on Amazon
+    </a>
+  </div>
+  <a href="https://www.amazon.com/dp/B0936FGLQS?tag=kitchenease35-20" class="flex-shrink-0">
+    <img
+      src="https://m.media-amazon.com/images/I/81UnVRZkvbL._AC_SL1500_.jpg"
+      alt="COSORI Pro LE 5-Qt Air Fryer"
+      class="w-28 h-28 object-contain rounded-lg shadow-md"
+    />
+  </a>
+</div>
 
 <div class="gap-section"></div>
 
- <h2 classname="second-segment">🥈Ninja AF101 4-Qt Air Fryer</h2>
-
-- Crispier finish than some budget models  
-- Doubles as a dehydrator  
-👉 [Check latest price on Amazon](https://www.amazon.com/dp/EXAMPLE?tag=yourID-20)
+<div class="flex items-start gap-10 flex-row">
+    <div>
+        <h2 classname="second-segment">🥈Ninja AF101 4-Qt Air Fryer</h2>
+        <ul class="list-disc list-inside text-stone-700 mb-2">
+            <li>Crispier finish than some budget models</li>  
+            <li>Doubles as a dehydrator</li>  
+         </ul>
+👉      <a
+         href="https://www.amazon.com/dp/B07FDJMC9Q?tag=kitchenease35-20"
+         class="text-brand hover:underline"
+         target="_blank"
+         rel="noopener noreferrer"
+        >
+            Check latest price on Amazon
+        </a>
+  </div>
+  <a href="https://www.amazon.com/dp/B07FDJMC9Q?tag=kitchenease35-20" class="flex-shrink-0">
+    <img
+      src="https://m.media-amazon.com/images/I/71+8uTMDRFL._AC_SL1500_.jpg"
+      alt="Ninja AF101 4-Qt Air Fryer"
+      class="w-28 h-28 object-contain rounded-lg shadow-md"
+    />
+  </a>
+</div>
 
 <div class="gap-section"></div>
 
-<h2 classname="second-segment">🥉 Instant Vortex Plus 6-Qt Air Fryer</h2>
-
-- 6 smart programs  
-- Sleek stainless-steel look  
-👉 [Check latest price on Amazon](https://www.amazon.com/dp/EXAMPLE?tag=yourID-20)
+<div class="flex items-start gap-10 flex-row">
+    <div>
+        <h2 classname="second-segment">🥉 Instant Vortex Plus 6-Qt Air Fryer</h2>
+        <ul class="list-disc list-inside text-stone-700 mb-2">
+            <li>6 smart programs</li>  
+            <li>Sleek stainless-steel look</li>  
+         </ul>
+👉      <a
+         href="https://www.amazon.com/dp/B07VHFMZHJ?tag=kitchenease35-20"
+         class="text-brand hover:underline"
+         target="_blank"
+         rel="noopener noreferrer"
+        >
+            Check latest price on Amazon
+        </a>
+  </div>
+  <a href="https://www.amazon.com/dp/B07VHFMZHJ?tag=kitchenease35-20" class="flex-shrink-0">
+    <img
+      src="https://m.media-amazon.com/images/I/71orgjq5TYL._AC_SL1500_.jpg"
+      alt="Ninja AF101 4-Qt Air Fryer"
+      class="w-28 h-28 object-contain rounded-lg shadow-md"
+    />
+  </a>
+</div>
 
 <div class="gap-section"></div>
 

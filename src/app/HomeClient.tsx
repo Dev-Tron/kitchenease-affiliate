@@ -8,28 +8,28 @@ import { Post } from "@/types";
 
 const featuredProducts = [
   {
-    name: "Air Fryer XL",
-    image: "/airfryer.jpg",
-    url: "https://www.amazon.com/dp/B07Y2ZZX5F",
-    price: "$89.99",
+    name: "COSORI Pro LE 5-Qt Air Fryer",
+    image: "/fryer.jpg",
+    url: "https://www.amazon.com/dp/B0936FGLQS?tag=kitchenease35-20",
+    price: "$99.99",
   },
   {
-    name: "Cast Iron Skillet",
-    image: "/skillet.jpg",
-    url: "https://www.amazon.com/dp/B08H7ZNNZP",
-    price: "$34.99",
+    name: "Lodge 10.25-Inch Cast Iron Skillet",
+    image: "/skillet2.jpg",
+    url: "https://www.amazon.com/dp/B00006JSUA?tag=kitchenease35-20",
+    price: "$24.90",
   },
   {
-    name: "Blender Pro 5000",
-    image: "/blender.jpg",
-    url: "https://www.amazon.com/dp/B01N6E66RN",
-    price: "$129.99",
+    name: "NutriBullet Pro 900",
+    image: "/blender4.jpg",
+    url: "https://www.amazon.com/dp/B0BZK4TZJ2?tag=kitchenease35-20",
+    price: "$85.57",
   },
   {
-    name: "Electric Kettle Glass 1.7L",
-    image: "/kettle.jpg",
-    url: "https://www.amazon.com/dp/B09Q7QF3FV",
-    price: "$39.99",
+    name: "COSORI Electric Gooseneck Kettle",
+    image: "/kettle2.jpg",
+    url: "https://www.amazon.com/dp/B07T1CH2HH?tag=kitchenease35-20",
+    price: "$62.99",
   },
 ];
 

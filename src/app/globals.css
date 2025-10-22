@@ -82,3 +82,9 @@ body {
   object-fit: cover;
 }
 
+.product-image img {
+  width: 180px;    /* makes it smaller like a card */
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+}

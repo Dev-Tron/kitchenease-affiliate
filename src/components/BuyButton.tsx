@@ -1,3 +1,5 @@
+"use client";
+
 import { withTag } from "@/lib/afiliate";
 
 interface Props {

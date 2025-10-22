@@ -2,7 +2,7 @@
 title: "5 Smart Ways to Organize a Small Kitchen"
 excerpt: "Tight on space? These 5 clever kitchen hacks will help you declutter and organize like a pro — even in the tiniest kitchens."
 date: "2025-10-16"
-affiliateLink: ""
+affiliateLink: "https://www.amazon.com/dp/B0FNN1G6YM"
 ---
 
 Small kitchens don’t have to mean chaos. With a few smart tricks, you can make your space feel bigger, cleaner, and way more functional. Whether you’re renting or renovating, here are 5 ways to organize your kitchen like a minimalist master chef.
@@ -56,7 +56,7 @@ Clear jars or bins make it easy to see what you’ve got — and look so much be
 
 ## 💡 Bonus Tip
 
-If you love home hacks like this, check out our favorite [affordable kitchen organizers on Amazon](https://www.amazon.com/dp/EXAMPLE?tag=yourID-20).
+If you love home hacks like this, check out our favorite [affordable kitchen organizers on Amazon](https://www.amazon.com/dp/B0FNN1G6YM?tag=kitchenease35-20).
 
 <div class="gap-section"></div>
 
