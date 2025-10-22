@@ -3,6 +3,7 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import { Outfit } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const outfit = Outfit({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="container mx-auto px-4 pt-24 md:pt-32 pb-12 space-y-16">
           {children}
           <Analytics />
+          <SpeedInsights />
         </main>
         <Footer />
       </body>
