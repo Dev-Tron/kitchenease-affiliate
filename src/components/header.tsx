@@ -95,7 +95,7 @@ export default function Header() {
 
       {/* Sidebar Drawer */}
       <div
-        className={`fixed top-0 right-0 h-full w-64 bg-white text-black p-6 shadow-lg z-50 transform transition-all duration-300 ease-in-out rounded-bl-2xl ${
+        className={`fixed top-0 right-0 w-64 bg-white text-black p-6 shadow-lg z-50 transform transition-all duration-300 ease-in-out rounded-bl-2xl ${
           isOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
         }`}
       >
